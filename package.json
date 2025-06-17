@@ -2,7 +2,7 @@
   "name": "02-api-rest-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "build/server.js",
   "engines": {
     "node": "18"
   },
@@ -12,8 +12,9 @@
     "lint": "eslint src --ext .ts --fix",
     "migrate:make": "ts-node ./node_modules/knex/bin/cli.js --knexfile knexfile.ts migrate:make",
     "migrate:latest": "ts-node-esm ./node_modules/knex/bin/cli.js --knexfile knexfile.ts migrate:latest",
-    "build": "tsup src/**/*.ts --dts --out-dir build",
-    "test": "npx vitest --reporter verbose"
+    "build": "tsup src/server.ts --dts --out-dir build",
+    "test": "npx vitest --reporter verbose",
+    "start": "node build/server.js"
   },
   "keywords": [],
   "author": "",
