@@ -1,0 +1,3 @@
+Essa é um API feita com Node.js, Knex, Zod, TypeScript, Fastify...
+É um API de Transactions usada pra analisar transações de dinheiro. 
+Fiz esse projeto junto com o Diego do curso de Node.js que estou fazendo na Rocket Seat.
